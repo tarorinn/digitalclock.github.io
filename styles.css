@@ -1,99 +1,73 @@
 body {
-  font-family: 'Share Tech Mono', monospace;
-  /* font-family: 'Courier New', monospace; */
+  width: 337;
   font-size: 14px;
-  background: #fff;
-  color: #fff;
-  background: #080808;
   background-size: 100%;
+  background: #080808;
 }
 
-.container {
-  margin: 20px auto;
-  width: 425px;
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#clock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #daf6ff;
+  margin: 80px auto;
+  width: 800px;
   padding: 55px;
   text-align: center;
-  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
 }
 
-#timer {
-  height: 160px;
-  line-height: 160px;
-  font-size: 80px;
-}
-
-.btn {
-  width: 120px;
-  height: 85px;
-  line-height: 85px;
+#date {
   font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  user-select: none;
 }
-
-.shadow{
-  text-shadow: 0 0 40px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+#time {
+  /* letter-spacing: 0.05em; */
+  font-size: 80px;
+  padding: 5px 0;
 }
-
-.text {
-  margin-top: 5px;
+#text {
+  /* letter-spacing: 0.1em; */
   font-size: 12px;
-}
-
-.controls {
-  display: flex;
-  justify-content: space-between;
-}
-
-.inactive {
-  opacity: .6;
+  padding: 20px 0 0;
 }
 
 @media (min-width: 0px) and (max-width: 599px) {
-  .container {
-    margin: 0 auto;
-    margin-top: 80px;
-    width: 200px;
+  #clock {
+    margin: 150px auto;
+    width: 300px;
     padding: 15px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
   }
-  #timer {
-    height: 80px;
-    line-height: 80px;
-    font-size: 40px;
+  #date {
+    font-size: 20px;
   }
-  .btn {
-    width: 55px;
-    height: 45px;
-    line-height: 45px;
-    font-size: 12px;
+  #time {
+    font-size: 45px;
   }
-  .text {
-    margin-top: 5px;
-    font-size: 6px;
+  #text {
+    font-size: 10px;
   }
 }
-  
-@media (min-width: 600px) and (max-width: 799px) {
-  .container {
-    margin: 0 auto;
-    margin-top: 80px;
-    width: 300px;
-    padding: 25px;
+
+@media (min-width: 600px) and (max-width: 899px) {
+  #clock {
+    margin: 80px auto;
+    width: 500px;
+    padding: 15px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
   }
-  #timer {
-    height: 100px;
-    line-height: 100px;
-    font-size: 60px;
+  #date {
+    font-size: 22px;
   }
-  .btn {
-    width: 65px;
-    height: 55px;
-    line-height: 55px;
-    font-size: 12px;
+  #time {
+    font-size: 65px;
   }
-  .text {
-    margin-top: 5px;
-    font-size: 8px;
+  #text {
+    font-size: 11px;
   }
 }
